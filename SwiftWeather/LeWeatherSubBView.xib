@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="leIconFont.ttf">
+            <string>leIconFont</string>
+            <string>leIconFont</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeWeatherSubBView" customModule="SwiftWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLabel" destination="rnN-l1-97V" id="DIl-hG-JwI"/>
+                <outlet property="iconLabel" destination="23j-B5-Fco" id="797-nw-17X"/>
+                <outlet property="temperatureLabel" destination="Xku-uZ-hBe" id="RRT-Cc-wIq"/>
+                <outlet property="weatherLebel" destination="6k0-og-dN1" id="lxI-Fl-cRf"/>
+                <outlet property="windLebel" destination="kpK-uD-Ta0" id="tFG-ZR-bDD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lgR-s1-jaS">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ix-n4-pY6">
+                    <rect key="frame" x="0.0" y="0.0" width="370" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="H2s-Mg-abT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5/19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xku-uZ-hBe">
+                    <rect key="frame" x="172" y="8" width="119" height="25"/>
+                    <fontDescription key="fontDescription" name="leIconFont" family="leIconFont" pointSize="14"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晴间多云" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k0-og-dN1">
+                    <rect key="frame" x="91" y="8" width="80" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="aBv-ft-RS6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23j-B5-Fco">
+                    <rect key="frame" x="54" y="4" width="36" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="MmT-iN-Bgj"/>
+                        <constraint firstAttribute="height" constant="34" id="rY9-He-fAZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="leIconFont" family="leIconFont" pointSize="20"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微风" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-uD-Ta0">
+                    <rect key="frame" x="292" y="8" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="cde-uK-LrH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周一" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnN-l1-97V">
+                    <rect key="frame" x="5" y="8" width="41" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="yTP-1d-a3M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="tintColor" red="0.31372549020000001" green="0.75686274509999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Xku-uZ-hBe" firstAttribute="centerY" secondItem="rnN-l1-97V" secondAttribute="centerY" id="8kw-X0-rKu"/>
+                <constraint firstItem="Xku-uZ-hBe" firstAttribute="top" secondItem="kpK-uD-Ta0" secondAttribute="top" id="8nj-qr-UbU"/>
+                <constraint firstItem="kpK-uD-Ta0" firstAttribute="leading" secondItem="Xku-uZ-hBe" secondAttribute="trailing" constant="1" id="CrB-Hx-F8P"/>
+                <constraint firstItem="23j-B5-Fco" firstAttribute="leading" secondItem="rnN-l1-97V" secondAttribute="trailing" constant="8" id="Dvo-3f-jcW"/>
+                <constraint firstItem="7Ix-n4-pY6" firstAttribute="top" secondItem="lgR-s1-jaS" secondAttribute="top" id="DxK-kW-bc3"/>
+                <constraint firstItem="rnN-l1-97V" firstAttribute="baseline" secondItem="6k0-og-dN1" secondAttribute="baseline" id="Kwz-XO-6vt"/>
+                <constraint firstItem="7Ix-n4-pY6" firstAttribute="leading" secondItem="lgR-s1-jaS" secondAttribute="leading" id="M3F-kG-eX1"/>
+                <constraint firstItem="kpK-uD-Ta0" firstAttribute="leading" secondItem="Xku-uZ-hBe" secondAttribute="trailing" constant="1" id="Mo3-vB-E5e"/>
+                <constraint firstItem="kpK-uD-Ta0" firstAttribute="centerY" secondItem="rnN-l1-97V" secondAttribute="centerY" id="Moj-l0-cQG"/>
+                <constraint firstItem="6k0-og-dN1" firstAttribute="baseline" secondItem="kpK-uD-Ta0" secondAttribute="baseline" id="NmD-CN-kvd"/>
+                <constraint firstItem="23j-B5-Fco" firstAttribute="centerY" secondItem="rnN-l1-97V" secondAttribute="centerY" id="PJE-SW-4as"/>
+                <constraint firstItem="6k0-og-dN1" firstAttribute="leading" secondItem="23j-B5-Fco" secondAttribute="trailing" constant="1" id="QRY-Ij-f6g"/>
+                <constraint firstItem="6k0-og-dN1" firstAttribute="centerY" secondItem="rnN-l1-97V" secondAttribute="centerY" id="ZJ8-ym-en5"/>
+                <constraint firstAttribute="trailing" secondItem="kpK-uD-Ta0" secondAttribute="trailing" constant="8" id="fQG-az-mf7"/>
+                <constraint firstItem="Xku-uZ-hBe" firstAttribute="centerY" secondItem="lgR-s1-jaS" secondAttribute="centerY" id="hsH-gB-ZkF"/>
+                <constraint firstItem="6k0-og-dN1" firstAttribute="top" secondItem="lgR-s1-jaS" secondAttribute="topMargin" id="pf5-Cn-bsm"/>
+                <constraint firstItem="rnN-l1-97V" firstAttribute="leading" secondItem="lgR-s1-jaS" secondAttribute="leading" constant="5" id="qow-av-uEr"/>
+                <constraint firstAttribute="trailing" secondItem="7Ix-n4-pY6" secondAttribute="trailing" id="uCV-p0-Px3"/>
+                <constraint firstItem="Xku-uZ-hBe" firstAttribute="leading" secondItem="6k0-og-dN1" secondAttribute="trailing" constant="1" id="wIY-u3-2Y5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="226" y="35"/>
+        </view>
+    </objects>
+</document>
